@@ -1,0 +1,84 @@
+
+PRSice 2.1.6 (15 Janurary 2019) 
+https://github.com/choishingwan/PRSice
+(C) 2016-2017 Shing Wan (Sam) Choi, Jack Euesden, Cathryn M. Lewis, Paul F. O'Reilly
+GNU General Public License v3
+
+If you use PRSice in any published work, please cite:
+Jack Euesden Cathryn M. Lewis Paul F. O'Reilly (2015)
+PRSice: Polygenic Risk Score software.
+Bioinformatics 31 (9): 1466-1468
+
+2019-01-29 22:27:01
+./tools/prsice/PRSice_linux \
+    --A1 A1 \
+    --A2 A2 \
+    --bar-levels 0.001,0.05,0.1,0.2,0.3,0.4,0.5,1 \
+    --base src/breast_cancer.prsice.assoc \
+    --binary-target T \
+    --bp BP \
+    --chr CHR \
+    --clump-kb 250 \
+    --clump-p 1.000000 \
+    --clump-r2 0.100000 \
+    --extract results/1026PM_2019January29/prsice_analysis.valid \
+    --interval 5e-05 \
+    --lower 0.0001 \
+    --model add \
+    --out results/1026PM_2019January29/prsice_analysis \
+    --pvalue P \
+    --seed 3693554309 \
+    --snp SNP \
+    --stat OR \
+    --target results/1026PM_2019January29/sample \
+    --thread 1 \
+    --upper 0.5
+
+
+Loading Genotype file: results/1026PM_2019January29/sample 
+(bed) 
+ 
+
+2 people (0 male(s), 0 female(s)) observed 
+2 founder(s) included 
+ 
+
+SNP extraction/exclusion list contains 5 columns, will 
+assume first column contains the SNP ID 
+
+24 variant(s) included 
+ 
+
+1 region included 
+
+There are a total of 1 phenotype to process 
+ 
+
+Start processing breast_cancer.prsice 
+============================== 
+ 
+
+Base file: src/breast_cancer.prsice.assoc 
+1988 variant(s) observed in base file, with: 
+1987 variant(s) not found in target file 
+1 total variant(s) included from base file 
+ 
+ 
+
+Start performing clumping 
+
+7851 MB RAM detected; reserving 1 MB for clumping 
+Allocated 1 MB successfully 
+ 
+
+Number of variant(s) after clumping : 1 
+ 
+
+Phenotype is a binary phenotype 
+1 control(s) 
+1 case(s) 
+ 
+
+There are 1 region(s)/phenotype(s) with p-value > 0.1 
+([1;31mnot significant[0m); 
+
